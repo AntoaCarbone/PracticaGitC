@@ -18,12 +18,12 @@
         <form class="formulario">
             <div class="form_container">
                 <label for="nombre" class="form_label">Nombre</label>
-                <input type="text" name="nombre" id="nombre" required class="form_imput" pattern="^[a-z]">
+                <input type="text" name="nombre" id="nombre" required class="form_imput" pattern="[a-zA-Z]+" title="El campo solo acepta letras">
             </div>
                 
             <div class="form_container">
                 <label for="apellido" class="form_label">Apellido</label>
-                <input type="text" name="apellido" id="apellido" required class="form_imput" pattern="^[a-z]">   
+                <input type="text" name="apellido" id="apellido" required class="form_imput" pattern="[a-zA-Z]+" title="El campo solo acepta letras">   
             </div>
 
                 
@@ -33,15 +33,16 @@
                 <input type="email" name="correo" id="email" class="form_imput">
             </div>
 
-            <div class="form_container" >
-                <label for="nacimiento" class="form_label">Fecha de Nacimiento</label >
-                <input type="date" name="nacimiento" id="nacimiento" class="form_imput">
+            <div class="form_container">
+                <label for="nacimiento" class="form_label">Fecha de Nacimiento</label>
+                <input type="date" name="nacimiento" id="nacimiento" class="form_imput" required>
             </div>
+            
                 
                 
             <div class="form_container">
                 <label for="pais" >País de Residencia</label>
-                <select name="pais" id="Pais" class="form_imput">
+                <select name="pais" id="pais" class="form_imput" required>
                     <option value="" disabled selected>Seleccionar</option>
                     <option value="Argentina">Argentina</option>
                     <option value="Brasil">Brasil</option>
