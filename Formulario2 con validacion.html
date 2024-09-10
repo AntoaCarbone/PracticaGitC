@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Oscuro</title>
+    <link rel="stylesheet" href="EstiloOscuro.css">
+</head> 
+
+
+<body>
+    
+
+    <div class="ContenedorFormulario">
+
+        <H1>Formulario de Registro</H1>
+
+        <form class="formulario">
+            <div class="form_container">
+                <label for="nombre" class="form_label">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required class="form_imput" pattern="^[a-z]">
+            </div>
+                
+            <div class="form_container">
+                <label for="apellido" class="form_label">Apellido</label>
+                <input type="text" name="apellido" id="apellido" required class="form_imput" pattern="^[a-z]">   
+            </div>
+
+                
+    
+            <div class="form_container">
+                <label for="email" class="form_label">Correo</label required>
+                <input type="email" name="correo" id="email" class="form_imput">
+            </div>
+
+            <div class="form_container" >
+                <label for="nacimiento" class="form_label">Fecha de Nacimiento</label >
+                <input type="date" name="nacimiento" id="nacimiento" class="form_imput">
+            </div>
+                
+                
+            <div class="form_container">
+                <label for="pais" >País de Residencia</label>
+                <select name="pais" id="Pais" class="form_imput">
+                    <option value="" disabled selected>Seleccionar</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Uruguay">Uruguay</option>
+                </select> 
+            </div>    
+            
+            <div >
+                <button type="submit" class="Enviar">Enviar </button>
+            </div> 
+        </form>
+    </div>
+    
+</body>
+</html>
